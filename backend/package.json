@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "nodemon src/app.js",
-    "start": "node src/app.js"
+    "start": "node init-db.js && node src/app.js",
+    "build": "echo 'Backend has no build step'"
   },
   "dependencies": {
     "cors": "^2.8.5",

@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 const menuRoutes = require('./routes/menu');
 
 const app = express();
@@ -15,10 +16,20 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.json());
 
+// Serve static files from the built frontend
+const frontendDistPath = path.join(__dirname, '../../frontend/dist');
+app.use(express.static(frontendDistPath));
+
 app.use('/api/menu', menuRoutes);
 
-app.get('/', (req, res) => {
-  res.send('Restaurant API');
+// Serve the Vue app for client-side routing
+app.get('*', (req, res) => {
+  // If it's an API route, don't serve the index
+  if (req.path.startsWith('/api')) {
+    return res.status(404).json({ error: 'Not found' });
+  }
+  // Otherwise serve the Vue app for client-side routing
+  res.sendFile(path.join(frontendDistPath, 'index.html'));
 });
 
 // Global error handler for unhandled errors
