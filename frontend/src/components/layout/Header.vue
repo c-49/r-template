@@ -34,7 +34,6 @@
               <span class="text-black text-lg font-bold">C</span>
             </div>
             <span class="text-white font-bold text-xs">Cheffest</span>
-            <span class="text-white text-[10px] opacity-75">{{ $t('header.tagline') }}</span>
           </router-link>
 
           <!-- Right spacer -->
@@ -82,7 +81,6 @@
             <span class="text-black text-xl font-bold">C</span>
           </div>
           <span class="text-white font-bold text-sm">Cheffest</span>
-          <span class="text-white text-xs opacity-75">{{ $t('header.tagline') }}</span>
         </router-link>
 
         <!-- Right spacer -->
