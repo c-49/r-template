@@ -9,7 +9,7 @@ const fs = require('fs');
 const path = require('path');
 const { Pool } = require('pg');
 
-const dbUrl = (process.env.DATABASE_URL || process.env.DB_URL) + '?dbname=restaurant';
+const dbUrl = process.env.DATABASE_URL || process.env.DB_URL;
 
 if (!dbUrl) {
   console.error('Error: DATABASE_URL or DB_URL environment variable is not set');
