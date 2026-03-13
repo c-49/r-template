@@ -3,11 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "description": "Vue 3 Restaurant Template with Express Backend",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
   "scripts": {
     "dev": "concurrently \"npm --prefix frontend run dev\" \"npm --prefix backend run dev\"",
     "build": "npm --prefix frontend run build && npm --prefix backend run build",
     "start": "npm --prefix backend start",
-    "install:all": "npm install && npm --prefix frontend install && npm --prefix backend install"
+    "install:all": "npm install"
   },
   "engines": {
     "node": ">=18.0.0",
@@ -17,3 +21,4 @@
     "concurrently": "^8.0.0"
   }
 }
+
