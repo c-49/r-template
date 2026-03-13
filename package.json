@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "concurrently \"npm --prefix frontend run dev\" \"npm --prefix backend run dev\"",
     "build": "npm --prefix frontend run build && npm --prefix backend run build",
-    "start": "npm --prefix backend start",
+    "start": "npm run build && npm --prefix backend start",
     "install:all": "npm install"
   },
   "engines": {
