@@ -1,11 +1,12 @@
 <template>
-  <div class="font-body text-primary">
+  <div class="min-h-screen bg-black">
+    <Header />
     <router-view />
   </div>
 </template>
 
 <script setup>
-// global app component
+import Header from './components/layout/Header.vue';
 </script>
 
 <style>

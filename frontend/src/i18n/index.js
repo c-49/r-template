@@ -2,6 +2,16 @@ import { createI18n } from 'vue-i18n';
 
 const messages = {
   en: {
+    header: {
+      tagline: 'Delicious Food',
+    },
+    landing: {
+      hero: {
+        title: 'Welcome! We Made Delicious Food for You',
+        subtitle: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        cta: 'Order Online',
+      },
+    },
     hero: {
       title: 'Welcome to Our Restaurant',
       tagline: 'Delicious food, cozy atmosphere',
@@ -27,6 +37,16 @@ const messages = {
     },
   },
   es: {
+    header: {
+      tagline: 'Comida Deliciosa',
+    },
+    landing: {
+      hero: {
+        title: '¡Bienvenido! Hicimos Comida Deliciosa para Ti',
+        subtitle: 'Lorem Ipsum es simplemente texto de relleno de la industria de impresión y composición.',
+        cta: 'Ordenar en Línea',
+      },
+    },
     hero: {
       title: 'Bienvenido a Nuestro Restaurante',
       tagline: 'Comida deliciosa, ambiente acogedor',
