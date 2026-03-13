@@ -8,7 +8,7 @@ const messages = {
     landing: {
       hero: {
         title: 'Welcome! We Made Delicious Food for You',
-        subtitle: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        subtitle: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever.',
         cta: 'Order Online',
       },
     },
@@ -43,7 +43,7 @@ const messages = {
     landing: {
       hero: {
         title: '¡Bienvenido! Hicimos Comida Deliciosa para Ti',
-        subtitle: 'Lorem Ipsum es simplemente texto de relleno de la industria de impresión y composición.',
+        subtitle: 'Lorem Ipsum es simplemente texto de relleno de la industria de impresión y composición. Lorem Ipsum ha sido el texto de relleno estándar de la industria.',
         cta: 'Ordenar en Línea',
       },
     },
