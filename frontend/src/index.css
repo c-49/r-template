@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* theme variables */
+  --color-primary: #333333;
+  --color-secondary: #555555;
+  --font-body: 'Helvetica Neue', Arial, sans-serif;
+  --font-heading: 'Georgia', serif;
+}
